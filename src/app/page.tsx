@@ -2,7 +2,8 @@ import { Header } from "../components/Header";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
-import Menu from "@/components/Menu";
+import SinglePageMenu from "@/components/SinglePageMenu";
+import TwoPagesMenu from "@/components/TwoPagesMenu";
 import ContactSection from "@/components/Contact";
 const Home = () => {
   const menuImages = [
@@ -21,6 +22,7 @@ const Home = () => {
     "/images/page13.jpg",
     "/images/page14.jpg",
     "/images/page15.jpg",
+    "/images/book-back.jpg",
   ];
   const promotionImages = [
     "/images/promotion1.png",
@@ -41,9 +43,17 @@ const Home = () => {
         <Hero />
         <Services />
         <ContactSection />
-        <Menu images={menuImages} title="Menu" />
-        <Menu images={promotionImages} title="Chương trình nổi bật" />
-        <Menu images={speacialImages} title="Món ăn nổi bật" />
+        <TwoPagesMenu images={menuImages} title="Menu" id="menu" />
+        <SinglePageMenu
+          images={promotionImages}
+          title="Chương trình nổi bật"
+          id="promotions"
+        />
+        <SinglePageMenu
+          images={speacialImages}
+          title="Món ăn nổi bật"
+          id="special"
+        />
       </main>
       <Footer />
     </>

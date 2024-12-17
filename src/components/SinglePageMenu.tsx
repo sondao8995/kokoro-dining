@@ -5,11 +5,12 @@ import { Carousel } from "antd";
 interface MenuProps {
   images: string[];
   title: string;
+  id: string;
 }
 
-const Menu: React.FC<MenuProps> = ({ images, title }) => {
+const SinglePageMenu: React.FC<MenuProps> = ({ images, title, id }) => {
   return (
-    <>
+    <section id={id}>
       <h2 className="text-3xl font-bold text-center text-[#673110] mt-4">
         {title}
       </h2>
@@ -33,8 +34,8 @@ const Menu: React.FC<MenuProps> = ({ images, title }) => {
           </Carousel>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
-export default Menu;
+export default SinglePageMenu;

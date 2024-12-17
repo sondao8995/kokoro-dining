@@ -22,11 +22,11 @@ const ContactSection: React.FC = () => {
   ];
 
   return (
-    <>
-      <h2 className="text-3xl font-bold text-center mb-8 text-[#673110]">
-        ĐỊA CHỈ NHÀ HÀNG
+    <section id="contact">
+      <h2 className="text-3xl font-bold text-center mb-2 text-[#673110]">
+        Liên hệ & Đặt bàn
       </h2>
-      <section className="py-16 mx-4 sm:mx-8">
+      <section className="py-8 mx-4 sm:mx-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* First Column: Google Map 1 */}
           <div className="bg-white overflow-hidden">
@@ -37,9 +37,12 @@ const ContactSection: React.FC = () => {
 
             <div className="flex items-center justify-center">
               <Phone size={16} />
-              <span className="text-red-600 font-semibold !text-xl mb-2">
+              <a
+                href={`tel:${locations[0].hotline.replace(/\s/g, "")}`}
+                className="text-red-600 font-semibold !text-xl mb-2"
+              >
                 Hotline: {locations[0].hotline}
-              </span>
+              </a>
             </div>
             <iframe
               title="Google Map"
@@ -85,9 +88,12 @@ const ContactSection: React.FC = () => {
             </p>
             <div className="flex items-center justify-center">
               <Phone size={16} />
-              <span className="text-red-600 font-semibold !text-xl mb-2">
+              <a
+                href={`tel:${locations[1].hotline.replace(/\s/g, "")}`}
+                className="text-red-600 font-semibold !text-xl mb-2"
+              >
                 Hotline: {locations[1].hotline}
-              </span>
+              </a>
             </div>
             <iframe
               title="Google Map 2"
@@ -102,7 +108,7 @@ const ContactSection: React.FC = () => {
           </div>
         </div>
       </section>
-    </>
+    </section>
   );
 };
 
