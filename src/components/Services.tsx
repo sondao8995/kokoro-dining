@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-
+import { Facebook, Instagram } from "lucide-react";
 const Services = () => {
   const images = [
     {
@@ -41,23 +41,21 @@ const Services = () => {
               TÌM HIỂU THÊM VỀ CHÚNG TÔI
             </button>
           </div>
-
-          {/* Google Map */}
-          <h2 className="text-3xl font-bold text-center mb-8 text-[#673110]">
-            ĐỊA CHỈ NHÀ HÀNG
-          </h2>
-          <div className="flex justify-center">
-            <iframe
-              title="Google Map"
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD_w76cHgCjtM2XS_Z9oy0AGm55_gbsk4k&q=Kokoro+Dining,Linh+Đàm"
-              width="100%"
-              height="450"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              className="rounded-lg shadow-lg max-w-5xl"
-            ></iframe>
+          <div className="flex gap-4 mb-8 justify-center">
+            <a
+              href="https://www.facebook.com/kokoro30yenninh"
+              className="text-blue-600 hover:text-blue-700"
+            >
+              <Facebook size={24} />
+            </a>
+            <a
+              href="https://instagram.com/kokorodiningvn"
+              className="text-pink-600 hover:text-pink-700"
+            >
+              <Instagram size={24} />
+            </a>
           </div>
+          {/* Google Map */}
         </div>
 
         {/* Right Column: Images */}

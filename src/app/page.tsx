@@ -2,20 +2,48 @@ import { Header } from "../components/Header";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
-import DishesSlider from "@/components/DishesSlider";
 import Menu from "@/components/Menu";
-import ServicesSection from "@/components/ServiceCard";
-
+import ContactSection from "@/components/Contact";
 const Home = () => {
+  const menuImages = [
+    "/images/book-cover.jpg",
+    "/images/page2.jpg",
+    "/images/page3.jpg",
+    "/images/page4.jpg",
+    "/images/page5.jpg",
+    "/images/page6.jpg",
+    "/images/page7.jpg",
+    "/images/page8.jpg",
+    "/images/page9.jpg",
+    "/images/page10.jpg",
+    "/images/page11.jpg",
+    "/images/page12.jpg",
+    "/images/page13.jpg",
+    "/images/page14.jpg",
+    "/images/page15.jpg",
+  ];
+  const promotionImages = [
+    "/images/promotion1.png",
+    "/images/promotion2.png",
+    "/images/promotion3.png",
+  ];
+  const speacialImages = [
+    "/images/special1.png",
+    "/images/special2.png",
+    "/images/special3.png",
+    "/images/special4.png",
+    "/images/special5.png",
+  ];
   return (
     <>
       <Header />
       <main className="bg-white">
         <Hero />
         <Services />
-        <DishesSlider />
-        <Menu />
-        <ServicesSection />
+        <ContactSection />
+        <Menu images={menuImages} title="Menu" />
+        <Menu images={promotionImages} title="Chương trình nổi bật" />
+        <Menu images={speacialImages} title="Món ăn nổi bật" />
       </main>
       <Footer />
     </>
