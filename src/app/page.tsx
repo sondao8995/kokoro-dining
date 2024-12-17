@@ -7,6 +7,7 @@ import TwoPagesMenu from "@/components/TwoPagesMenu";
 import ContactSection from "@/components/Contact";
 const Home = () => {
   const menuImages = [
+    "/images/book-back.jpg",
     "/images/book-cover.jpg",
     "/images/page2.jpg",
     "/images/page3.jpg",
@@ -22,7 +23,6 @@ const Home = () => {
     "/images/page13.jpg",
     "/images/page14.jpg",
     "/images/page15.jpg",
-    "/images/book-back.jpg",
   ];
   const promotionImages = [
     "/images/promotion1.png",

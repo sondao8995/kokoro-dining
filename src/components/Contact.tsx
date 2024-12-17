@@ -9,6 +9,9 @@ const ContactSection: React.FC = () => {
     {
       address: "Cơ sở 1: 30 Yên Ninh, Trúc Bạch, Ba Đình, Hà Nội",
       hotline: "0828 826 299",
+      deliveryk: "https://www.deliveryk.com/shops/10148",
+      shopee: "https://shopeefood.vn/ha-noi/kokoro-com-ngon-nhat-ban-yen-ninh",
+      be: "https://begroup.onelink.me/n83F/odzekkwr",
     },
     {
       address:
@@ -105,6 +108,30 @@ const ContactSection: React.FC = () => {
               loading="lazy"
               className="max-w-5xl mx-auto"
             ></iframe>
+            <p className="font-medium text-center text-[#673110] font-semibold mb-2 mt-2">
+              Có mặt trên
+            </p>
+            <div className="flex gap-8 mt-2 justify-center">
+              <a href={locations[1].shopee} target="_blank">
+                <Image
+                  src="/images/shopee.png"
+                  alt="Shopee Food"
+                  width={50}
+                  height={50}
+                />
+              </a>
+              <a href={locations[1].be} target="_blank">
+                <Image src="/images/be.png" alt="Be" width={50} height={50} />
+              </a>
+              <a href={locations[1].deliveryk} target="_blank">
+                <Image
+                  src="/images/deliveryk.png"
+                  alt="Delivery K"
+                  width={50}
+                  height={50}
+                />
+              </a>
+            </div>
           </div>
         </div>
       </section>
