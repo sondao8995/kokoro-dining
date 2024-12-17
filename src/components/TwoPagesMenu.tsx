@@ -27,11 +27,11 @@ const TwoPagesMenu: React.FC<MenuProps> = ({ images, title, id }) => {
             {pairedImages.map((pair, index) => (
               <div
                 key={index}
-                className="h-full flex items-center justify-center bg-white"
+                className="h-full flex items-center justify-center bg-[#feecd6]"
               >
                 <div className="flex w-full max-w-4xl space-x-4">
                   {/* Left Page */}
-                  <div className="flex-1 h-[50vh] bg-gray-100 rounded-lg shadow-lg flex items-center justify-center">
+                  <div className="flex-1 h-[50vh] bg-[#feecd6] rounded-lg shadow-lg flex items-center justify-center">
                     {pair[0] ? (
                       <img
                         src={pair[0]}
@@ -43,7 +43,7 @@ const TwoPagesMenu: React.FC<MenuProps> = ({ images, title, id }) => {
                     )}
                   </div>
                   {/* Right Page */}
-                  <div className="flex-1 h-[50vh] bg-gray-100 rounded-lg shadow-lg flex items-center justify-center">
+                  <div className="flex-1 h-[50vh] bg-[#feecd6] rounded-lg shadow-lg flex items-center justify-center">
                     {pair[1] ? (
                       <img
                         src={pair[1]}

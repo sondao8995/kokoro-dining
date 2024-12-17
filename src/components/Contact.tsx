@@ -32,7 +32,7 @@ const ContactSection: React.FC = () => {
       <section className="py-8 mx-4 sm:mx-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* First Column: Google Map 1 */}
-          <div className="bg-white overflow-hidden">
+          <div className="bg-[#feecd6] overflow-hidden">
             {/* Address Text Above Map */}
             <p className="font-medium text-xl text-center text-[#673110] font-semibold mb-4">
               {locations[0].address}
@@ -84,7 +84,7 @@ const ContactSection: React.FC = () => {
           </div>
 
           {/* Second Column: Google Map 2 */}
-          <div className="bg-white overflow-hidden">
+          <div className="bg-[#feecd6] overflow-hidden">
             {/* Address Text Above Map */}
             <p className="font-medium text-xl text-center text-[#673110] font-semibold mb-2">
               {locations[1].address}

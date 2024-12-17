@@ -23,7 +23,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="home" className="py-16 bg-white ml-16 mr-16">
+    <section id="home" className="py-16 bg-[#feecd6] ml-16 mr-16">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-stretch">
         {/* Left Column: Content */}
         <div className="flex flex-col justify-center h-full">
@@ -44,9 +44,6 @@ const Services = () => {
               con người. Mỗi món ăn tại đây đều được chế biến với tất cả tâm
               huyết, mang đến cho bạn những trải nghiệm ẩm thực tuyệt vời nhất.
             </p>
-            <button className="border border-red-500 w-full h-16 text-black text-sm font-roboto text-red-500">
-              TÌM HIỂU THÊM VỀ CHÚNG TÔI
-            </button>
           </div>
           <h2 className="text-3xl font-bold mb-6 text-[#673110] text-center">
             Kết nối với chúng tôi

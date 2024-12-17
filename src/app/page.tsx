@@ -39,19 +39,23 @@ const Home = () => {
   return (
     <>
       <Header />
-      <main className="bg-white">
+      <main className="bg-[#feecd6]">
         <Hero />
         <Services />
         <ContactSection />
-        <TwoPagesMenu images={menuImages} title="Menu" id="menu" />
+        <TwoPagesMenu
+          images={menuImages}
+          title="Khám phá thực đơn tại KOKORO"
+          id="menu"
+        />
         <SinglePageMenu
           images={promotionImages}
-          title="Chương trình nổi bật"
+          title="Chương trình & uu đãi từ KOKORO"
           id="promotions"
         />
         <SinglePageMenu
           images={speacialImages}
-          title="Món ăn nổi bật"
+          title="Ăn ngon với KOKORO"
           id="special"
         />
       </main>
