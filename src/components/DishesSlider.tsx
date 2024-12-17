@@ -28,24 +28,7 @@ const dishes = [
 ];
 
 const ImageSliderWithPreview = () => {
-  const [currentPage, setCurrentPage] = useState(0);
   const [previewImage, setPreviewImage] = useState<string | null>(null);
-
-  const itemsPerPage = 4;
-  const totalPages = Math.ceil(dishes.length / itemsPerPage);
-
-  const nextPage = () => {
-    setCurrentPage((prev) => (prev + 1) % totalPages);
-  };
-
-  const previousPage = () => {
-    setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages);
-  };
-
-  const visibleDishes = React.useMemo(() => {
-    const start = currentPage * itemsPerPage;
-    return dishes.slice(start, start + itemsPerPage);
-  }, [currentPage]);
 
   return (
     <section className="ml-16 mr-16">
