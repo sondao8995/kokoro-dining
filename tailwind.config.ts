@@ -13,6 +13,10 @@ export default {
         foreground: "var(--foreground)",
       },
     },
+    fontFamily: {
+      sans: ["Inter", "sans-serif"],
+      roboto: ["Roboto", "sans-serif"],
+    },
   },
   plugins: [],
 } satisfies Config;
