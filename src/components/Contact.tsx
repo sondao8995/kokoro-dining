@@ -51,7 +51,7 @@ const ContactSection: React.FC = () => {
             </div>
             <iframe
               title="Google Map"
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD_w76cHgCjtM2XS_Z9oy0AGm55_gbsk4k&q=Kokoro+Dining,Linh+Đàm"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD_w76cHgCjtM2XS_Z9oy0AGm55_gbsk4k&q=Kokoro+Dining,Yen+Ninh"
               width="100%"
               height="200"
               style={{ border: 0 }}
@@ -102,7 +102,7 @@ const ContactSection: React.FC = () => {
             </div>
             <iframe
               title="Google Map 2"
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD_w76cHgCjtM2XS_Z9oy0AGm55_gbsk4k&q=Kokoro+Dining,Yen+Ninh"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD_w76cHgCjtM2XS_Z9oy0AGm55_gbsk4k&q=Kokoro+Dining,Linh+Đàm"
               width="100%"
               height="200"
               style={{ border: 0 }}

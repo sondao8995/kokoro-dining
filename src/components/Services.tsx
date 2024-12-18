@@ -39,13 +39,11 @@ const Services = () => {
               thực mà KOKORO muốn gửi gắm đến thực khách. Chúng tôi mong muốn
               tạo nên một không gian ấm cúng, thân thuộc như chính ngôi nhà của
               bạn, nơi bạn có thể thưởng thức những món ăn Nhật Bản đậm đà hương
-              vị, được chế biến từ những nguyên liệu tươi ngon nhất. Với một
-              không gian ấm cúng, thân thuộc như chính ngôi nhà của bạn, nơi bạn
-              có thể thưởng thức những món ăn Nhật Bản đậm đà hương vị, được chế
-              biến từ những nguyên liệu tươi ngon nhất. Với KOKORO, ẩm thực
-              không chỉ là việc ăn uống mà còn là sự kết nối giữa con người với
-              con người. Mỗi món ăn tại đây đều được chế biến với tất cả tâm
-              huyết, mang đến cho bạn những trải nghiệm ẩm thực tuyệt vời nhất.
+              vị, được chế biến từ những nguyên liệu tươi ngon nhất. <br />
+              Với KOKORO, ẩm thực không chỉ là việc ăn uống mà còn là sự kết nối
+              giữa con người với con người. Mỗi món ăn tại đây đều được chế biến với tất cả tâm
+              huyết, mang đến cho bạn những trải nghiệm ẩm thực tuyệt vời nhất. <br />
+              Chúng tôi mong rằng quý khách sẽ có những giây phút thật vui vẻ và đáng nhớ tại KOKORO. Hãy đến và cùng chúng tôi khám phá thế giới ẩm thực Nhật Bản nhé!
             </p>
           </div>
           <h2
