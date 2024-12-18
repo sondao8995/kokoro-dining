@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { ChevronDown, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Drawer } from "antd";
 import { Menu as AntMenu } from "antd";
 
 import { useDisclosure } from "@mantine/hooks";
-
+import { garet } from "@/app/font";
 interface IMenuDrawerProps {
   open: boolean;
   onClose: VoidFunction;
@@ -24,18 +24,26 @@ function MenuDrawer({ open, onClose }: IMenuDrawerProps) {
   return (
     <Drawer open={open} onClose={onClose} placement="right">
       <AntMenu
-        className="!border-none !bg-transparent [&_.ant-menu-item.ant-menu-item-selected]:!bg-primary [&_.ant-menu-item.ant-menu-item-selected]:!text-white"
+        className={`!border-none bg-[#feecd6] [&_.ant-menu-item.ant-menu-item-selected]:!bg-primary [&_.ant-menu-item.ant-menu-item-selected]:!text-white ${garet.className}`}
         items={[
           {
             key: "home",
-            label: "Trang chủ",
+            label: "ĐÔI LỜI TỪ KOKORO",
             onClick: () => {
               onClose();
               scrollToSection("home");
             },
           },
           {
-            label: "Menu",
+            label: "LIÊN HỆ & ĐẶT BÀN",
+            key: "contact",
+            onClick: () => {
+              onClose();
+              scrollToSection("contact");
+            },
+          },
+          {
+            label: "KHÁM PHÁ THỰC ĐƠN TẠI KOKORO",
             key: "menu",
             onClick: () => {
               onClose();
@@ -44,7 +52,7 @@ function MenuDrawer({ open, onClose }: IMenuDrawerProps) {
             },
           },
           {
-            label: "Chương trình nổi bật",
+            label: "CHƯƠNG TRÌNH & ƯU ĐÃI TỪ KOKORO",
             key: "promotions",
             onClick: () => {
               onClose();
@@ -52,19 +60,11 @@ function MenuDrawer({ open, onClose }: IMenuDrawerProps) {
             },
           },
           {
-            label: "Món ăn nổi bật",
+            label: "ĂN NGON VỚI KOKORO",
             key: "special",
             onClick: () => {
               onClose();
               scrollToSection("special");
-            },
-          },
-          {
-            label: "Liên hệ & Đặt bàn",
-            key: "contact",
-            onClick: () => {
-              onClose();
-              scrollToSection("contact");
             },
           },
         ]}
@@ -111,13 +111,11 @@ export function Header() {
             <div className="relative group">
               <button className="flex items-center space-x-1 text-gray-700 transition-colors hover:text-red-600">
                 <span>CHƯƠNG TRÌNH NỔI BẬT</span>
-                <ChevronDown className="h-4 w-4" />
               </button>
             </div>
             <div className="relative group">
               <button className="flex items-center space-x-1 text-gray-700 transition-colors hover:text-red-600">
                 <span>MÓN ĂN NỔI BẬT</span>
-                <ChevronDown className="h-4 w-4" />
               </button>
             </div>
 

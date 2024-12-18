@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Carousel } from "antd";
-
+import { iCielBCDowntown } from "@/app/font";
 interface MenuProps {
   images: string[];
   title: string;
@@ -17,7 +17,9 @@ const TwoPagesMenu: React.FC<MenuProps> = ({ images, title, id }) => {
 
   return (
     <section id={id}>
-      <h2 className="text-3xl font-bold text-center text-[#673110] mt-4">
+      <h2
+        className={`text-3xl font-bold text-center text-[#673110] mt-4 ${iCielBCDowntown.className}`}
+      >
         {title}
       </h2>
       <div className="flex items-center justify-center py-8">
@@ -31,24 +33,24 @@ const TwoPagesMenu: React.FC<MenuProps> = ({ images, title, id }) => {
               >
                 <div className="flex w-full max-w-4xl space-x-4">
                   {/* Left Page */}
-                  <div className="flex-1 h-[50vh] bg-[#feecd6] rounded-lg shadow-lg flex items-center justify-center">
+                  <div className="flex-1 h-[50vh] bg-[#feecd6]  flex items-center justify-center">
                     {pair[0] ? (
                       <img
                         src={pair[0]}
                         alt={`Page ${index * 2 + 1}`}
-                        className="max-h-full max-w-full object-contain rounded-lg"
+                        className="max-h-full max-w-full object-contain "
                       />
                     ) : (
                       <div className="text-gray-500">No Content</div>
                     )}
                   </div>
                   {/* Right Page */}
-                  <div className="flex-1 h-[50vh] bg-[#feecd6] rounded-lg shadow-lg flex items-center justify-center">
+                  <div className="flex-1 h-[50vh] bg-[#feecd6] flex items-center justify-center">
                     {pair[1] ? (
                       <img
                         src={pair[1]}
                         alt={`Page ${index * 2 + 2}`}
-                        className="max-h-full max-w-full object-contain rounded-lg"
+                        className="max-h-full max-w-full object-contain"
                       />
                     ) : (
                       <div className="text-gray-500">No Content</div>

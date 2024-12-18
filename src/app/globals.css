@@ -25,3 +25,12 @@ body {
 .ant-carousel .slick-next:hover {
   color: #673110 !important;
 }
+.ant-menu-item-selected {
+  background-color: #673110 !important;
+}
+.ant-menu-item-selected a {
+  color: white !important;
+}
+.ant-drawer-body {
+  background-color: #feecd6 !important;
+}

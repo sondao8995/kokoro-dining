@@ -3,7 +3,7 @@
 import { Phone } from "lucide-react";
 import React from "react";
 import Image from "next/image";
-
+import { iCielBCDowntown } from "@/app/font";
 const ContactSection: React.FC = () => {
   const locations = [
     {
@@ -26,7 +26,9 @@ const ContactSection: React.FC = () => {
 
   return (
     <section id="contact">
-      <h2 className="text-3xl font-bold text-center mb-2 text-[#673110]">
+      <h2
+        className={`text-3xl font-bold text-center mb-2 text-[#673110] ${iCielBCDowntown.className}`}
+      >
         Liên hệ & Đặt bàn
       </h2>
       <section className="py-8 mx-4 sm:mx-8">

@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import SinglePageMenu from "@/components/SinglePageMenu";
 import TwoPagesMenu from "@/components/TwoPagesMenu";
 import ContactSection from "@/components/Contact";
+import { garet } from "@/app/font";
 const Home = () => {
   const menuImages = [
     "/images/book-back.jpg",
@@ -37,7 +38,7 @@ const Home = () => {
     "/images/special5.png",
   ];
   return (
-    <>
+    <div className={`${garet.className}`}>
       <Header />
       <main className="bg-[#feecd6]">
         <Hero />
@@ -60,7 +61,7 @@ const Home = () => {
         />
       </main>
       <Footer />
-    </>
+    </div>
   );
 };
 

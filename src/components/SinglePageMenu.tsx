@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Carousel } from "antd";
-
+import { iCielBCDowntown } from "@/app/font";
 interface MenuProps {
   images: string[];
   title: string;
@@ -11,7 +11,9 @@ interface MenuProps {
 const SinglePageMenu: React.FC<MenuProps> = ({ images, title, id }) => {
   return (
     <section id={id}>
-      <h2 className="text-3xl font-bold text-center text-[#673110] mt-4">
+      <h2
+        className={`text-3xl font-bold text-center text-[#673110] mt-4 ${iCielBCDowntown.className}`}
+      >
         {title}
       </h2>
       <div className="flex items-center justify-center py-8">

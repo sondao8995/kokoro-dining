@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { FacebookOutlined, InstagramOutlined } from "@ant-design/icons";
+import { iCielBCDowntown } from "@/app/font";
 const Services = () => {
   const images = [
     {
@@ -28,8 +29,10 @@ const Services = () => {
         {/* Left Column: Content */}
         <div className="flex flex-col justify-center h-full">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-[#673110]">
-              Giới thiệu về chúng tôi
+            <h2
+              className={`text-3xl font-bold mb-6 text-[#673110] ${iCielBCDowntown.className}`}
+            >
+              ĐÔI LỜI TỪ KOKORO
             </h2>
             <p className="text-gray-400 mb-8">
               &quot;Món ăn ngon đến từ trái tim&quot; – đó chính là triết lý ẩm
@@ -45,8 +48,10 @@ const Services = () => {
               huyết, mang đến cho bạn những trải nghiệm ẩm thực tuyệt vời nhất.
             </p>
           </div>
-          <h2 className="text-3xl font-bold mb-6 text-[#673110] text-center">
-            Kết nối với chúng tôi
+          <h2
+            className={`text-3xl font-bold mb-6 text-[#673110] text-center ${iCielBCDowntown.className}`}
+          >
+            KẾT NỐI CÙNG KOKORO
           </h2>
           <div className="flex gap-4 mb-8 justify-center">
             <a
