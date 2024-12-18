@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kokoro Dining",
+  title: "Kokoro Japanese Dining",
   description: "Where delicious food comes from the heart",
 };
 
