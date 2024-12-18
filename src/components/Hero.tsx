@@ -4,7 +4,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section className="relative w-full overflow-hidden">
-      <div className="relative w-full h-[300px] sm:h-[400px] md:h-[600px] lg:h-[800px] xl:h-[1000px]">
+      <div className="relative w-full h-[220px] sm:h-[350px] md:h-[500px] lg:h-[600px] xl:h-[900px]">
         <Image
           src="/images/cover.jpg"
           alt="Japanese Food Selection"

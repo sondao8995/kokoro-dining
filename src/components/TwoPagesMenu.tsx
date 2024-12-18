@@ -18,7 +18,7 @@ const TwoPagesMenu: React.FC<MenuProps> = ({ images, title, id }) => {
   return (
     <section id={id}>
       <h2
-        className={`text-3xl font-bold text-center text-[#673110] mt-4 ${iCielBCDowntown.className}`}
+        className={`text-4xl font-bold text-center text-[#673110] mt-4 ${iCielBCDowntown.className}`}
       >
         {title}
       </h2>
@@ -31,7 +31,7 @@ const TwoPagesMenu: React.FC<MenuProps> = ({ images, title, id }) => {
                 key={index}
                 className="h-full flex items-center justify-center bg-[#feecd6]"
               >
-                <div className="flex w-full max-w-4xl space-x-4">
+                <div className="flex w-full max-w-4xl space-x-0">
                   {/* Left Page */}
                   <div className="flex-1 h-[50vh] bg-[#feecd6]  flex items-center justify-center">
                     {pair[0] ? (

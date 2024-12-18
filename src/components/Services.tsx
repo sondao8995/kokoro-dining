@@ -24,17 +24,17 @@ const Services = () => {
   ];
 
   return (
-    <section id="home" className="py-16 bg-[#feecd6] ml-16 mr-16">
+    <section id="home" className="py-6 bg-[#feecd6] ml-10 mr-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-stretch">
         {/* Left Column: Content */}
         <div className="flex flex-col justify-center h-full">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2
-              className={`text-3xl font-bold mb-6 text-[#673110] ${iCielBCDowntown.className}`}
+              className={`text-4xl font-bold mb-6 text-[#673110] ${iCielBCDowntown.className}`}
             >
               ĐÔI LỜI TỪ KOKORO
             </h2>
-            <p className="text-gray-400 mb-8">
+            <p className="text-[#9a2424] text-justify text-sm mb-8">
               &quot;Món ăn ngon đến từ trái tim&quot; – đó chính là triết lý ẩm
               thực mà KOKORO muốn gửi gắm đến thực khách. Chúng tôi mong muốn
               tạo nên một không gian ấm cúng, thân thuộc như chính ngôi nhà của
@@ -49,7 +49,7 @@ const Services = () => {
             </p>
           </div>
           <h2
-            className={`text-3xl font-bold mb-6 text-[#673110] text-center ${iCielBCDowntown.className}`}
+            className={`text-4xl font-bold mb-6 text-[#673110] text-center ${iCielBCDowntown.className}`}
           >
             KẾT NỐI CÙNG KOKORO
           </h2>

@@ -11,3 +11,6 @@ export const garet = localFont({
     },
   ],
 });
+export const utma = localFont({
+  src: "../../public/fonts/UTM Avo.ttf",
+});

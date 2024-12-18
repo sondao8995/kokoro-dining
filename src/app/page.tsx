@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import SinglePageMenu from "@/components/SinglePageMenu";
 import TwoPagesMenu from "@/components/TwoPagesMenu";
 import ContactSection from "@/components/Contact";
-import { garet } from "@/app/font";
+import { utma } from "@/app/font";
 const Home = () => {
   const menuImages = [
     "/images/book-back.jpg",
@@ -38,7 +38,7 @@ const Home = () => {
     "/images/special5.png",
   ];
   return (
-    <div className={`${garet.className}`}>
+    <div className={`${utma.className}`}>
       <Header />
       <main className="bg-[#feecd6]">
         <Hero />
@@ -51,12 +51,12 @@ const Home = () => {
         />
         <SinglePageMenu
           images={promotionImages}
-          title="Chương trình & uu đãi từ KOKORO"
+          title="Chương trình & ưu đãi từ KOKORO"
           id="promotions"
         />
         <SinglePageMenu
           images={speacialImages}
-          title="Ăn ngon với KOKORO"
+          title="Ăn ngon cùng KOKORO"
           id="special"
         />
       </main>
