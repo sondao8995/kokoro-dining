@@ -100,7 +100,7 @@ export function Header() {
               onClick={() => scrollToSection("home")}
               className="text-red-600 transition-colors hover:text-red-700"
             >
-              TRANG CHỦ
+              GIỚI THIỆU
             </button>
             <button
               onClick={() => scrollToSection("menu")}
@@ -108,16 +108,17 @@ export function Header() {
             >
               MENU
             </button>
-            <div className="relative group">
-              <button className="flex items-center space-x-1 text-gray-700 transition-colors hover:text-red-600">
-                <span>CHƯƠNG TRÌNH NỔI BẬT</span>
-              </button>
-            </div>
-            <div className="relative group">
-              <button className="flex items-center space-x-1 text-gray-700 transition-colors hover:text-red-600">
-                <span>MÓN ĂN NỔI BẬT</span>
-              </button>
-            </div>
+            <button 
+            onClick={() => scrollToSection("promotions")}
+            className="flex items-center space-x-1 text-gray-700 transition-colors hover:text-red-600"
+            >CHƯƠNG TRÌNH & ƯU ĐÃI
+            </button>
+            <button
+              onClick={() => scrollToSection("special")}
+              className="flex items-center space-x-1 text-gray-700 transition-colors hover:text-red-600"
+            >
+              GỢI Ý MÓN NGON
+            </button>
 
             <button
               onClick={() => scrollToSection("contact")}
