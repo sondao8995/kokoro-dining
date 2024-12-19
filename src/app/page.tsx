@@ -6,6 +6,7 @@ import SinglePageMenu from "@/components/SinglePageMenu";
 import TwoPagesMenu from "@/components/TwoPagesMenu";
 import ContactSection from "@/components/Contact";
 import { utma } from "@/app/font";
+
 const Home = () => {
   const menuImages = [
     "/images/book-back.jpg",

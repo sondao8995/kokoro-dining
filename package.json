@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@mantine/hooks": "^7.15.1",
+    "@supabase/supabase-js": "^2.47.10",
     "antd": "^5.22.5",
     "axios": "^1.7.9",
     "lucide-react": "^0.468.0",
