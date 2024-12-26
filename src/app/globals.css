@@ -34,3 +34,6 @@ body {
 .ant-drawer-body {
   background-color: #feecd6 !important;
 }
+.list {
+  columns: 300px;
+}

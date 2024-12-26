@@ -88,12 +88,13 @@ export function Header() {
 
       <header className="sticky top-0 z-50 w-full border-b bg-white">
         <div className="container flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2 mt-1">
             <Image
               src="/images/2.png"
               alt="Kokoro Logo"
               width={100}
               height={40}
+              style={{ width: "auto" }}
             />
           </Link>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">

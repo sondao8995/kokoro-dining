@@ -70,15 +70,17 @@ const About = () => {
               src={images[0].src}
               alt={images[0].alt}
               fill
+              sizes="auto"
               className="object-cover rounded-lg"
             />
           </div>
-          <div className="grid grid-cols-2 gap-4 h-full">
+          <div className="list">
             <div className="relative aspect-square">
               <Image
                 src={images[2].src}
                 alt={images[2].alt}
                 fill
+                sizes="auto"
                 className="object-cover rounded-lg"
               />
             </div>
@@ -87,6 +89,7 @@ const About = () => {
                 src={images[3].src}
                 alt={images[3].alt}
                 fill
+                sizes="auto"
                 className="object-cover rounded-lg"
               />
             </div>
