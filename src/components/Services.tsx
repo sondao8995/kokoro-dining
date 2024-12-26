@@ -5,7 +5,7 @@ import { FacebookOutlined, InstagramOutlined } from "@ant-design/icons";
 import { iCielBCDowntown } from "@/app/font";
 
 
-const Services = () => {
+const About = () => {
  
   const images = [
     {
@@ -105,4 +105,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default About;

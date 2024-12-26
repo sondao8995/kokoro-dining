@@ -3,9 +3,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Menu } from "lucide-react";
-import { Drawer } from "antd";
+import { Button, Drawer, Dropdown } from "antd";
 import { Menu as AntMenu } from "antd";
-
+import { useTranslations } from "next-intl";
 import { useDisclosure } from "@mantine/hooks";
 import { garet } from "@/app/font";
 interface IMenuDrawerProps {
@@ -14,6 +14,7 @@ interface IMenuDrawerProps {
 }
 
 function MenuDrawer({ open, onClose }: IMenuDrawerProps) {
+  const t = useTranslations("common");
   const scrollToSection = (id: string) => {
     onClose();
     const section = document.getElementById(id);
@@ -28,14 +29,14 @@ function MenuDrawer({ open, onClose }: IMenuDrawerProps) {
         items={[
           {
             key: "home",
-            label: "ĐÔI LỜI TỪ KOKORO",
+            label: t("home"),
             onClick: () => {
               onClose();
               scrollToSection("home");
             },
           },
           {
-            label: "LIÊN HỆ & ĐẶT BÀN",
+            label: t("contact"),
             key: "contact",
             onClick: () => {
               onClose();
@@ -43,7 +44,7 @@ function MenuDrawer({ open, onClose }: IMenuDrawerProps) {
             },
           },
           {
-            label: "KHÁM PHÁ THỰC ĐƠN TẠI KOKORO",
+            label: t("menu"),
             key: "menu",
             onClick: () => {
               onClose();
@@ -52,7 +53,7 @@ function MenuDrawer({ open, onClose }: IMenuDrawerProps) {
             },
           },
           {
-            label: "CHƯƠNG TRÌNH & ƯU ĐÃI TỪ KOKORO",
+            label: t("promotions"),
             key: "promotions",
             onClick: () => {
               onClose();
@@ -60,7 +61,7 @@ function MenuDrawer({ open, onClose }: IMenuDrawerProps) {
             },
           },
           {
-            label: "ĂN NGON VỚI KOKORO",
+            label: t("special"),
             key: "special",
             onClick: () => {
               onClose();
@@ -74,7 +75,18 @@ function MenuDrawer({ open, onClose }: IMenuDrawerProps) {
 }
 export function Header() {
   const [drawerOpen, drawerHandlers] = useDisclosure(false);
-
+  const menu = {
+    items: [
+      {
+        label: <Link href="/en"><Image src="/images/en.png" alt="English" width={20} height={20} /></Link>,
+        key: "en",
+      },
+      {
+        label: <Link href="/vi"><Image src="/images/vi.png" alt="Vietnamese" width={20} height={20} /></Link>,
+        key: "vi",
+      },
+    ]
+  };
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
@@ -96,6 +108,14 @@ export function Header() {
             />
           </Link>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
+            <Dropdown menu={menu} trigger={['hover']}>
+             <Link href="/vi">
+             <div className="flex items-center space-x-1">
+             <Image src="/images/vi.png" alt="Vietnamese" width={20} height={20} />
+             <Image src="/images/en.png" alt="English" width={20} height={20} />
+             </div>
+             </Link>
+            </Dropdown>
             <button
               onClick={() => scrollToSection("home")}
               className="text-red-600 transition-colors hover:text-red-700"

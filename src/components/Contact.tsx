@@ -4,7 +4,7 @@ import { Phone } from "lucide-react";
 import React from "react";
 import Image from "next/image";
 import { iCielBCDowntown } from "@/app/font";
-const ContactSection: React.FC = () => {
+const Contact: React.FC = () => {
   const locations = [
     {
       address: "Cơ sở 1: 30 Yên Ninh, Trúc Bạch, Ba Đình, Hà Nội",
@@ -141,4 +141,4 @@ const ContactSection: React.FC = () => {
   );
 };
 
-export default ContactSection;
+export default Contact;
