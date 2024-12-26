@@ -1,9 +1,8 @@
 import { Header } from "../../components/Header";
-import Cover from "../../components/Hero";
-import About from "../../components/Services";
+import Cover from "../../components/Cover";
+import About from "../../components/About";
 import Footer from "../../components/Footer";
-import SinglePageMenu from "@/components/SinglePageMenu";
-import TwoPagesMenu from "@/components/TwoPagesMenu";
+import Menu from "@/components/Menu";
 import Contact from "@/components/Contact";
 import { utma } from "@/app/font";
 import { useTranslations } from "next-intl";
@@ -48,17 +47,13 @@ const Home = () => {
         <Cover />
         <About />
         <Contact />
-        <TwoPagesMenu images={menuImages} title={t("menu")} id="menu" />
-        <SinglePageMenu
+        <Menu images={menuImages} title={t("menu")} id="menu" />
+        <Menu
           images={promotionImages}
           title={t("promotions")}
           id="promotions"
         />
-        <SinglePageMenu
-          images={speacialImages}
-          title={t("special")}
-          id="special"
-        />
+        <Menu images={speacialImages} title={t("special")} id="special" />
       </main>
       <Footer />
     </div>

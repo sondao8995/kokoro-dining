@@ -3,10 +3,10 @@ import React from "react";
 import Image from "next/image";
 import { FacebookOutlined, InstagramOutlined } from "@ant-design/icons";
 import { iCielBCDowntown } from "@/app/font";
-
+import { useTranslations } from "next-intl";
 
 const About = () => {
- 
+  const t = useTranslations("about");
   const images = [
     {
       src: "/images/space1.jpg",
@@ -35,24 +35,16 @@ const About = () => {
             <h2
               className={`text-4xl font-bold mb-6 text-[#673110] ${iCielBCDowntown.className}`}
             >
-              ĐÔI LỜI TỪ KOKORO
+              {t("title")}
             </h2>
             <p className="text-[#9a2424] text-justify text-sm mb-8">
-              &quot;Món ăn ngon đến từ trái tim&quot; – đó chính là triết lý ẩm
-              thực mà KOKORO muốn gửi gắm đến thực khách. Chúng tôi mong muốn
-              tạo nên một không gian ấm cúng, thân thuộc như chính ngôi nhà của
-              bạn, nơi bạn có thể thưởng thức những món ăn Nhật Bản đậm đà hương
-              vị, được chế biến từ những nguyên liệu tươi ngon nhất. <br />
-              Với KOKORO, ẩm thực không chỉ là việc ăn uống mà còn là sự kết nối
-              giữa con người với con người. Mỗi món ăn tại đây đều được chế biến với tất cả tâm
-              huyết, mang đến cho bạn những trải nghiệm ẩm thực tuyệt vời nhất. <br />
-              Chúng tôi mong rằng quý khách sẽ có những giây phút thật vui vẻ và đáng nhớ tại KOKORO. Hãy đến và cùng chúng tôi khám phá thế giới ẩm thực Nhật Bản nhé!
+              {t("content")}
             </p>
           </div>
           <h2
             className={`text-4xl font-bold mb-6 text-[#673110] text-center ${iCielBCDowntown.className}`}
           >
-            KẾT NỐI CÙNG KOKORO
+            {t("connect")}
           </h2>
           <div className="flex gap-4 mb-8 justify-center">
             <a

@@ -1,9 +1,20 @@
 {
-    "common": {
-        "home": "ĐÔI LỜI TỪ KOKORO",
-        "contact": "LIÊN HỆ & ĐẶT BÀN",
-        "menu": "THỰC ĐƠN",
-        "promotions": "CHƯƠNG TRÌNH & ƯU ĐÃI",
-        "special": "ĂN NGON CÙNG KOKORO"
-    }
+  "common": {
+    "home": "ĐÔI LỜI TỪ KOKORO",
+    "contact": "LIÊN HỆ & ĐẶT BÀN",
+    "menu": "THỰC ĐƠN",
+    "promotions": "CHƯƠNG TRÌNH & ƯU ĐÃI",
+    "special": "ĂN NGON CÙNG KOKORO"
+  },
+  "contact": {
+    "title": "Liên hệ & Đặt bàn",
+    "store1": "Cơ sở 1: 30 Yên Ninh, Trúc Bạch, Ba Đình, Hà Nội",
+    "store2": "Cơ sở 2: 32 Biệt thự 4, Bán Đảo Linh Đàm, Khu đô thị Linh Đàm, Hoàng Mai, Hà Nội",
+    "available": "Có mặt trên"
+  },
+  "about": {
+    "title": "ĐÔI LỜI TỪ KOKORO",
+    "content": "\"Món ăn ngon đến từ trái tim\" – đó chính là triết lý ẩm thực mà KOKORO muốn gửi gắm đến thực khách. Chúng tôi mong muốn tạo nên một không gian ấm cúng, thân thuộc như chính ngôi nhà của bạn, nơi bạn có thể thưởng thức những món ăn Nhật Bản đậm đà hương vị, được chế biến từ những nguyên liệu tươi ngon nhất. Với KOKORO, ẩm thực không chỉ là việc ăn uống mà còn là sự kết nối giữa con người với con người. Mỗi món ăn tại đây đều được chế biến với tất cả tâm huyết, mang đến cho bạn những trải nghiệm ẩm thực tuyệt vời nhất.Chúng tôi mong rằng quý khách sẽ có những giây phút thật vui vẻ và đáng nhớ tại KOKORO. Hãy đến và cùng chúng tôi khám phá thế giới ẩm thực Nhật Bản nhé!",
+    "connect": "KẾT NỐI CÙNG KOKORO"
+  }
 }

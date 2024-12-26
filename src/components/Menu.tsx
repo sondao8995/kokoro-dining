@@ -8,7 +8,7 @@ interface MenuProps {
   id: string;
 }
 
-const SinglePageMenu: React.FC<MenuProps> = ({ images, title, id }) => {
+const Menu: React.FC<MenuProps> = ({ images, title, id }) => {
   return (
     <section id={id}>
       <h2
@@ -23,7 +23,7 @@ const SinglePageMenu: React.FC<MenuProps> = ({ images, title, id }) => {
             {images.map((src, index) => (
               <div
                 key={index}
-                className="h-full flex items-center justify-center bg-white"
+                className="h-full flex items-center justify-center bg-[#feecd6]"
               >
                 <img
                   src={src}
@@ -40,4 +40,4 @@ const SinglePageMenu: React.FC<MenuProps> = ({ images, title, id }) => {
   );
 };
 
-export default SinglePageMenu;
+export default Menu;

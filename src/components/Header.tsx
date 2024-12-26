@@ -75,6 +75,7 @@ function MenuDrawer({ open, onClose }: IMenuDrawerProps) {
 }
 export function Header() {
   const [drawerOpen, drawerHandlers] = useDisclosure(false);
+  const t = useTranslations("common");
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
@@ -119,32 +120,32 @@ export function Header() {
               onClick={() => scrollToSection("home")}
               className="text-red-600 transition-colors hover:text-red-700"
             >
-              GIỚI THIỆU
+              {t("home")}
             </button>
             <button
               onClick={() => scrollToSection("menu")}
               className="text-gray-700 transition-colors hover:text-red-600"
             >
-              MENU
+              {t("menu")}
             </button>
             <button
               onClick={() => scrollToSection("promotions")}
               className="flex items-center space-x-1 text-gray-700 transition-colors hover:text-red-600"
             >
-              CHƯƠNG TRÌNH & ƯU ĐÃI
+              {t("promotions")}
             </button>
             <button
               onClick={() => scrollToSection("special")}
               className="flex items-center space-x-1 text-gray-700 transition-colors hover:text-red-600"
             >
-              GỢI Ý MÓN NGON
+              {t("special")}
             </button>
 
             <button
               onClick={() => scrollToSection("contact")}
               className="text-gray-700 transition-colors hover:text-red-600"
             >
-              LIÊN HỆ
+              {t("contact")}
             </button>
           </nav>
           <span className="flex items-center space-x-3 lg:hidden mr-2">

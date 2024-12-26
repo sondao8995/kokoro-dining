@@ -4,18 +4,19 @@ import { Phone } from "lucide-react";
 import React from "react";
 import Image from "next/image";
 import { iCielBCDowntown } from "@/app/font";
+import { useTranslations } from "next-intl";
 const Contact: React.FC = () => {
+  const t = useTranslations("contact");
   const locations = [
     {
-      address: "Cơ sở 1: 30 Yên Ninh, Trúc Bạch, Ba Đình, Hà Nội",
+      address: t("store1"),
       hotline: "0828 826 299",
       deliveryk: "https://www.deliveryk.com/shops/10148",
       shopee: "https://shopeefood.vn/ha-noi/kokoro-com-ngon-nhat-ban-yen-ninh",
       be: "https://begroup.onelink.me/n83F/odzekkwr",
     },
     {
-      address:
-        "Cơ sở 2: 32 Biệt thự 4, Bán Đảo Linh Đàm, Khu đô thị Linh Đàm, Hoàng Mai, Hà Nội",
+      address: t("store2"),
 
       hotline: "0332 689 299",
       shopee: "https://shopeefood.vn/u/5eH4Cri",
@@ -29,7 +30,7 @@ const Contact: React.FC = () => {
       <h2
         className={`text-3xl font-bold text-center mb-2 text-[#673110] ${iCielBCDowntown.className}`}
       >
-        Liên hệ & Đặt bàn
+        {t("title")}
       </h2>
       <section className="py-8 mx-4 sm:mx-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -60,7 +61,7 @@ const Contact: React.FC = () => {
               className="max-w-5xl mx-auto"
             ></iframe>
             <p className="font-medium text-center text-[#673110] font-semibold mb-2 mt-2">
-              Có mặt trên
+              {t("available")}
             </p>
             <div className="flex gap-8 mt-2 justify-center">
               <a href={locations[0].shopee} target="_blank">
@@ -111,7 +112,7 @@ const Contact: React.FC = () => {
               className="max-w-5xl mx-auto"
             ></iframe>
             <p className="font-medium text-center text-[#673110] font-semibold mb-2 mt-2">
-              Có mặt trên
+              {t("available")}
             </p>
             <div className="flex gap-8 mt-2 justify-center">
               <a href={locations[1].shopee} target="_blank">

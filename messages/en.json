@@ -1,10 +1,20 @@
 {
-    "common": {
-        "home": "FEW WORDS FROM KOKORO",
-        "contact": "CONTACT & BOOKING",
-        "menu": "MENU",
-        "promotions": "PROMOTIONS & OFFERS",
-        "special": "EAT WELL WITH KOKORO"
-    }
-   
+  "common": {
+    "home": "FEW WORDS FROM KOKORO",
+    "contact": "CONTACT & BOOKING",
+    "menu": "MENU",
+    "promotions": "PROMOTIONS & OFFERS",
+    "special": "EAT WELL WITH KOKORO"
+  },
+  "contact": {
+    "title": "CONTACT & BOOKING",
+    "store1": "Our First Store: 30 Yen Ninh, Truc Bach, Ba Dinh, Ha Noi",
+    "store2": "Our Second Store: 32 Biet Thu 4, Ban Dao Linh Dam, Khu do thi Linh Dam, Hoang Mai, Ha Noi",
+    "available": "Available on"
+  },
+  "about": {
+    "title": "FEW WORDS FROM KOKORO",
+    "content": "\"Delicious food comes from the heart\" - that is the culinary philosophy that KOKORO wants to convey to diners. We want to create a cozy, familiar space like your own home, where you can enjoy flavorful Japanese dishes, prepared from the freshest ingredients. For KOKORO, cuisine is not just about eating but also about connecting people. Each dish here is prepared with all your heart, bringing you the best culinary experiences. We hope that you will have fun and memorable moments at KOKORO. Come and explore the world of Japanese cuisine with us!",
+    "connect": "CONNECT WITH KOKORO"
+  }
 }
