@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Menu } from "lucide-react";
-import { Button, Drawer, Dropdown } from "antd";
+import { Drawer, Dropdown } from "antd";
 import { Menu as AntMenu } from "antd";
 import { useTranslations } from "next-intl";
 import { useDisclosure } from "@mantine/hooks";
@@ -78,14 +78,27 @@ export function Header() {
   const menu = {
     items: [
       {
-        label: <Link href="/en"><Image src="/images/en.png" alt="English" width={20} height={20} /></Link>,
+        label: (
+          <Link href="/en">
+            <Image src="/images/en.png" alt="English" width={20} height={20} />
+          </Link>
+        ),
         key: "en",
       },
       {
-        label: <Link href="/vi"><Image src="/images/vi.png" alt="Vietnamese" width={20} height={20} /></Link>,
+        label: (
+          <Link href="/vi">
+            <Image
+              src="/images/vi.png"
+              alt="Vietnamese"
+              width={20}
+              height={20}
+            />
+          </Link>
+        ),
         key: "vi",
       },
-    ]
+    ],
   };
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
@@ -108,13 +121,23 @@ export function Header() {
             />
           </Link>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
-            <Dropdown menu={menu} trigger={['hover']}>
-             <Link href="/vi">
-             <div className="flex items-center space-x-1">
-             <Image src="/images/vi.png" alt="Vietnamese" width={20} height={20} />
-             <Image src="/images/en.png" alt="English" width={20} height={20} />
-             </div>
-             </Link>
+            <Dropdown menu={menu} trigger={["hover"]}>
+              <Link href="/vi">
+                <div className="flex items-center space-x-1">
+                  <Image
+                    src="/images/vi.png"
+                    alt="Vietnamese"
+                    width={20}
+                    height={20}
+                  />
+                  <Image
+                    src="/images/en.png"
+                    alt="English"
+                    width={20}
+                    height={20}
+                  />
+                </div>
+              </Link>
             </Dropdown>
             <button
               onClick={() => scrollToSection("home")}
@@ -128,10 +151,11 @@ export function Header() {
             >
               MENU
             </button>
-            <button 
-            onClick={() => scrollToSection("promotions")}
-            className="flex items-center space-x-1 text-gray-700 transition-colors hover:text-red-600"
-            >CHƯƠNG TRÌNH & ƯU ĐÃI
+            <button
+              onClick={() => scrollToSection("promotions")}
+              className="flex items-center space-x-1 text-gray-700 transition-colors hover:text-red-600"
+            >
+              CHƯƠNG TRÌNH & ƯU ĐÃI
             </button>
             <button
               onClick={() => scrollToSection("special")}
