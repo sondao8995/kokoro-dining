@@ -7,7 +7,7 @@ import TwoPagesMenu from "@/components/TwoPagesMenu";
 import Contact from "@/components/Contact";
 import { utma } from "@/app/font";
 import { useTranslations } from "next-intl";
-
+import SnowParticle from "@/components/SnowParticle";
 const Home = () => {
   const t = useTranslations("common");
   const menuImages = [
@@ -42,16 +42,13 @@ const Home = () => {
   ];
   return (
     <div className={`${utma.className}`}>
+      <SnowParticle />
       <Header />
       <main className="bg-[#feecd6]">
         <Cover />
         <About />
         <Contact />
-        <TwoPagesMenu
-          images={menuImages}
-          title={t("menu")}
-          id="menu"
-        />
+        <TwoPagesMenu images={menuImages} title={t("menu")} id="menu" />
         <SinglePageMenu
           images={promotionImages}
           title={t("promotions")}
