@@ -10,10 +10,10 @@ const About = () => {
 
   return (
     <section id="home" className="py-6 bg-[#feecd6] ml-10 mr-10">
-      <div className="grid grid-cols-1 gap-4 items-stretch">
         {/* Left Column: Content */}
-        <div className="flex flex-col justify-center h-full">
+        
           <div className="text-center max-w-3xl mx-auto mb-12">
+         
             <h2
               className={`text-4xl font-bold mb-6 text-[#673110] ${iCielBCDowntown.className}`}
             >
@@ -23,6 +23,14 @@ const About = () => {
               {t("content")}
             </p>
           </div>
+          <div className="flex justify-center">
+        <img
+            src="/images/eelrice.png"
+            style={{ width: "50%", height: "auto" }}
+            alt="About"
+            className="autorotate w-full h-full object-cover"
+          />
+         </div>
           <h2
             className={`text-4xl font-bold mb-6 text-[#673110] text-center ${iCielBCDowntown.className}`}
           >
@@ -43,7 +51,6 @@ const About = () => {
             </a>
           </div>
           {/* Google Map */}
-        </div>
 
         {/* Right Column: Images */}
         {/* <div className="grid gap-4 content-stretch">
@@ -77,7 +84,6 @@ const About = () => {
             </div>
           </div>
         </div> */}
-      </div>
     </section>
   );
 };

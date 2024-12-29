@@ -51,3 +51,15 @@ body {
     transform: translateY(0) scale(1);
   }
 }
+.autorotate {
+  animation: autorotateAnimation;
+  animation-timeline: view();
+}
+@keyframes autorotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
