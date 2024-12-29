@@ -24,7 +24,7 @@ const Contact: React.FC = () => {
       deliveryk: "https://www.deliveryk.com/shops/11169",
     },
   ];
-
+  
   return (
     <section id="contact">
       <h2
@@ -33,11 +33,10 @@ const Contact: React.FC = () => {
         {t("title")}
       </h2>
       <section className="py-8 mx-4 sm:mx-8">
-        <div className="grid autoshow grid-cols-1 md:grid-cols-2 gap-8">
           {/* First Column: Google Map 1 */}
-          <div className="bg-[#feecd6] overflow-hidden">
+          <div className="bg-[#feecd6] slide-in overflow-hidden">
             {/* Address Text Above Map */}
-            <p className="font-medium text-xl text-center text-[#673110] font-semibold mb-4">
+            <p className="font-medium text-xl text-center text-[#673110] font-semibold mb-2">
               {locations[0].address}
             </p>
 
@@ -87,7 +86,7 @@ const Contact: React.FC = () => {
           </div>
 
           {/* Second Column: Google Map 2 */}
-          <div className="bg-[#feecd6] overflow-hidden">
+          <div className="bg-[#feecd6] slide-in overflow-hidden">
             {/* Address Text Above Map */}
             <p className="font-medium text-xl text-center text-[#673110] font-semibold mb-2">
               {locations[1].address}
@@ -136,7 +135,6 @@ const Contact: React.FC = () => {
               </a>
             </div>
           </div>
-        </div>
       </section>
     </section>
   );

@@ -63,3 +63,18 @@ body {
     transform: rotate(360deg);
   }
 }
+.slide-in {
+  animation: slide-in 0.5s forwards;
+  animation-timeline: view();
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-20px); /* Start above the original position */
+    opacity: 0; /* Start fully transparent */
+  }
+  to {
+    transform: translateY(0); /* End at the original position */
+    opacity: 1; /* End fully opaque */
+  }
+}
