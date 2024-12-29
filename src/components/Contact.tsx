@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
         {t("title")}
       </h2>
       <section className="py-8 mx-4 sm:mx-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid autoshow grid-cols-1 md:grid-cols-2 gap-8">
           {/* First Column: Google Map 1 */}
           <div className="bg-[#feecd6] overflow-hidden">
             {/* Address Text Above Map */}

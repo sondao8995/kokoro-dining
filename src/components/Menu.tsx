@@ -16,7 +16,7 @@ const Menu: React.FC<MenuProps> = ({ images, title, id }) => {
       >
         {title}
       </h2>
-      <div className="flex items-center justify-center py-8">
+      <div className="autoshow flex items-center justify-center py-8">
         {/* Carousel Container with Fixed Dimensions */}
         <div className="w-full max-w-4xl min-h-[50vh] px-4 sm:px-6 md:px-8 overflow-hidden">
           <Carousel autoplay arrows className="h-full">

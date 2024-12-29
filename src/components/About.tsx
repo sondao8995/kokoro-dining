@@ -28,7 +28,7 @@ const About = () => {
 
   return (
     <section id="home" className="py-6 bg-[#feecd6] ml-10 mr-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-stretch">
+      <div className="grid grid-cols-1 gap-4 items-stretch">
         {/* Left Column: Content */}
         <div className="flex flex-col justify-center h-full">
           <div className="text-center max-w-3xl mx-auto mb-12">
@@ -37,7 +37,7 @@ const About = () => {
             >
               {t("title")}
             </h2>
-            <p className="text-[#9a2424] text-justify text-sm mb-8">
+            <p className="text-[#9a2424] autoshow text-justify text-sm mb-8">
               {t("content")}
             </p>
           </div>
@@ -64,7 +64,7 @@ const About = () => {
         </div>
 
         {/* Right Column: Images */}
-        <div className="grid gap-4 content-stretch">
+        {/* <div className="grid gap-4 content-stretch">
           <div className="relative aspect-[4/3] h-full">
             <Image
               src={images[0].src}
@@ -94,7 +94,7 @@ const About = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
