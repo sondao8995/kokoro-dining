@@ -6,24 +6,7 @@ import { useTranslations } from "next-intl";
 
 const About = () => {
   const t = useTranslations("about");
-  const images = [
-    {
-      src: "/images/space1.jpg",
-      alt: "Private dining room with traditional Japanese style seating",
-    },
-    {
-      src: "/images/space2.jpg",
-      alt: "Modern Japanese restaurant interior",
-    },
-    {
-      src: "/images/space3.jpg",
-      alt: "Comfortable dining area with wooden furniture",
-    },
-    {
-      src: "/images/space4.jpg",
-      alt: "Contemporary Japanese dining space",
-    },
-  ];
+  
 
   return (
     <section id="home" className="py-6 bg-[#feecd6] ml-10 mr-10">
