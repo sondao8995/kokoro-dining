@@ -86,7 +86,7 @@ const Contact: React.FC = () => {
           </div>
 
           {/* Second Column: Google Map 2 */}
-          <div className="bg-[#feecd6] slide-in overflow-hidden">
+          <div className="bg-[#feecd6] slide-in overflow-hidden mt-10">
             {/* Address Text Above Map */}
             <p className="font-medium text-xl text-center text-[#673110] font-semibold mb-2">
               {locations[1].address}
