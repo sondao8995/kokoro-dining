@@ -149,7 +149,7 @@ export function Header() {
               {t("contact")}
             </button>
           </nav>
-          <span className="flex items-center space-x-3 lg:hidden mr-2">
+          <span className="flex items-center space-x-3 md:hidden lg:hidden mr-2">
             <Link href="/en">
               <Image
                 src="/images/en.png"
