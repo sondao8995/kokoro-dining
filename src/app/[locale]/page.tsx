@@ -31,6 +31,7 @@ const Home = () => {
     "/images/promotion1.png",
     "/images/promotion2.png",
     "/images/promotion3.png",
+    "/images/promotion4.png",
   ];
   const speacialImages = [
     "/images/special1.png",
@@ -38,6 +39,7 @@ const Home = () => {
     "/images/special3.png",
     "/images/special4.png",
     "/images/special5.png",
+    "/images/special6.png",
   ];
   return (
     <div className={`${utma.className}`}>
