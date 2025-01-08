@@ -28,13 +28,13 @@ const Home = () => {
     "/images/page15.jpg",
   ];
   const promotionImages = [
+    "/images/special1.png",
     "/images/promotion1.png",
     "/images/promotion2.png",
     "/images/promotion3.png",
     "/images/promotion4.png",
   ];
   const speacialImages = [
-    "/images/special1.png",
     "/images/special2.png",
     "/images/special3.png",
     "/images/special4.png",
