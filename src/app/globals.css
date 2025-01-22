@@ -63,3 +63,15 @@ body {
     transform: rotate(360deg);
   }
 }
+@layer components {
+  .ad-modal .ant-modal-content {
+    @apply p-0 rounded-lg overflow-hidden;
+  }
+
+  .ad-modal .ant-modal-close {
+    @apply text-white bg-red-500 rounded-full p-2;
+  }
+  .ad-modal .ant-modal-close:hover {
+    @apply text-white bg-red-500 rounded-full p-2;
+  }
+}
