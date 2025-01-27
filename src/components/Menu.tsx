@@ -15,10 +15,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Menu: React.FC<MenuProps> = ({ images, title, id }) => {
   const textRef = useRef<HTMLHeadingElement>(null);
-  const [autoplay, setAutoplay] = useState(true);
-  const handleAfterChange = () => {
-    setAutoplay(false); // Disable autoplay after interaction
-  };
   useEffect(() => {
     // Check if window exists (ensure client-side execution)
     if (typeof window === "undefined") return;
@@ -65,15 +61,15 @@ const Menu: React.FC<MenuProps> = ({ images, title, id }) => {
         {/* Carousel Container with Fixed Dimensions */}
         <div className="w-full max-w-4xl min-h-[50vh] px-4 sm:px-6 md:px-8 overflow-hidden">
           <Carousel
-            autoplay={autoplay}
-            afterChange={handleAfterChange}
+            autoplay
+            autoplaySpeed={5000}
             arrows
             className="h-full"
           >
             {images.map((src, index) => (
               <div
                 key={index}
-                className="h-full flex items-center justify-center bg-[#feecd6]"
+                className="h-full flex items-center justify-center"
               >
                 <img
                   src={src}

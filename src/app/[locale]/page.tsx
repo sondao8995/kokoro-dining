@@ -46,7 +46,7 @@ const Home = () => {
     <div className={`${utma.className}`}>
       <SnowParticle />
       <Header />
-      <main className="bg-[#feecd6]">
+      <main className="kokoro-main">
         <Advertisement/>
         <Cover />
         <About />

@@ -57,7 +57,7 @@ const About = () => {
     }
   }, []);
   return (
-    <section id="home" className="py-6 bg-[#feecd6] ml-10 mr-10">
+    <section id="home" className="py-6 ml-10 mr-10">
       {/* Left Column: Content */}
 
       <div className="text-center max-w-3xl mx-auto mb-12">
@@ -77,9 +77,11 @@ const About = () => {
               </span>
             ))}
         </h2>
-        <p className="text-[#9a2424] autoshow text-justify text-sm mb-8">
-          {t("content")}
-        </p>
+        <div className="quotationbox">
+          <p className="text-[#9a2424] autoshow text-justify text-md mb-8">
+            {t("content")}
+          </p>
+        </div>
       </div>
       <div className="flex justify-center">
         <img

@@ -5,6 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,7 +33,9 @@ body {
   color: white !important;
 }
 .ant-drawer-body {
-  background-color: #feecd6 !important;
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+
 }
 .list {
   columns: 300px;
@@ -74,4 +77,16 @@ body {
   .ad-modal .ant-modal-close:hover {
     @apply text-white bg-red-500 rounded-full p-2;
   }
+}
+.kokoro-main {
+  background-image: url("/images/background.jpg");
+  background-size: contain;
+}
+.quotationbox {
+  background-color: #feecd6;
+  padding: 20px;
+  margin: 50px auto; /* Center horizontally */
+  border-radius: 50px 50px 50px 5px;
+  text-align: justify;
+  width: 100%; /* Adjust width as needed */
 }

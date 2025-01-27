@@ -1,6 +1,5 @@
 "use client";
 
-import { Phone } from "lucide-react";
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { iCielBCDowntown } from "@/app/font";
@@ -75,14 +74,13 @@ const Contact: React.FC = () => {
       </h2>
       <section className="py-8 mx-4 sm:mx-8">
         {/* First Column: Google Map 1 */}
-        <div className="bg-[#feecd6] autoshow overflow-hidden">
+        <div className=" autoshow overflow-hidden">
           {/* Address Text Above Map */}
           <p className="font-medium text-xl text-center text-[#673110] font-semibold mb-2">
             {locations[0].address}
           </p>
 
           <div className="flex items-center justify-center">
-            <Phone size={16} />
             <a
               href={`tel:${locations[0].hotline.replace(/\s/g, "")}`}
               className="text-red-600 font-semibold !text-xl mb-2"
@@ -127,13 +125,12 @@ const Contact: React.FC = () => {
         </div>
 
         {/* Second Column: Google Map 2 */}
-        <div className="bg-[#feecd6] autoshow overflow-hidden mt-10">
+        <div className=" autoshow overflow-hidden mt-10">
           {/* Address Text Above Map */}
           <p className="font-medium text-xl text-center text-[#673110] font-semibold mb-2">
             {locations[1].address}
           </p>
           <div className="flex items-center justify-center">
-            <Phone size={16} />
             <a
               href={`tel:${locations[1].hotline.replace(/\s/g, "")}`}
               className="text-red-600 font-semibold !text-xl mb-2"
