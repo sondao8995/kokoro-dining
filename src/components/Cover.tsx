@@ -9,7 +9,6 @@ const Cover = () => {
           src="/images/cover.jpg"
           alt="Japanese Food Selection"
           fill
-          style={{ objectFit: "contain" }}
           priority
         />
       </div>

@@ -3,14 +3,22 @@ import React, { useEffect, useState } from "react";
 import { Modal } from "antd";
 
 const Advertisement = () => {
-  const [isAdvertisementVisible, setIsAdvertisementVisible] = useState(true);
+  const [isAdvertisementVisible, setIsAdvertisementVisible] = useState(false); // Start with `false`
+  const [isHydrated, setIsHydrated] = useState(false); // Ensure hydration
+
   useEffect(() => {
+    setIsHydrated(true); // Mark hydration complete
     const timer = setTimeout(() => setIsAdvertisementVisible(true), 1000);
     return () => clearTimeout(timer);
   }, []);
+
+  // Avoid rendering until hydration is complete
+  if (!isHydrated) return null;
+
   const handleCloseAdvertisement = () => {
     setIsAdvertisementVisible(false);
   };
+
   return (
     <Modal
       open={isAdvertisementVisible}
