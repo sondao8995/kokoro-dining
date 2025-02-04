@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { Carousel } from "antd";
 import { iCielBCDowntown } from "@/app/font";
 import gsap from "gsap";
@@ -60,12 +60,7 @@ const Menu: React.FC<MenuProps> = ({ images, title, id }) => {
       <div className="flex items-center justify-center py-8">
         {/* Carousel Container with Fixed Dimensions */}
         <div className="w-full max-w-4xl min-h-[50vh] px-4 sm:px-6 md:px-8 overflow-hidden">
-          <Carousel
-            autoplay
-            autoplaySpeed={5000}
-            arrows
-            className="h-full"
-          >
+          <Carousel autoplay autoplaySpeed={5000} arrows className="h-full">
             {images.map((src, index) => (
               <div
                 key={index}
