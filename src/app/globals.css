@@ -5,12 +5,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #feecd6;
     --foreground: #ededed;
   }
 }
@@ -35,7 +34,6 @@ body {
 .ant-drawer-body {
   background-image: url("/images/background.jpg");
   background-size: cover;
-
 }
 .list {
   columns: 300px;
