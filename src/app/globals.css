@@ -32,8 +32,7 @@ body {
   color: white !important;
 }
 .ant-drawer-body {
-  background-image: url("/images/background.jpg");
-  background-size: cover;
+  background-color: #feecd6;
 }
 .list {
   columns: 300px;
@@ -76,10 +75,7 @@ body {
     @apply text-white bg-red-500 rounded-full p-2;
   }
 }
-.kokoro-main {
-  background-image: url("/images/background.jpg");
-  background-size: contain;
-}
+
 .quotationbox {
   background-color: #feecd6;
   padding: 20px;
