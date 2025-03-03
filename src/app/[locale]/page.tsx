@@ -29,11 +29,9 @@ const Home = () => {
     "/images/page15.jpg",
   ];
   const promotionImages = [
-    "/images/special1.png",
-    "/images/promotion1.png",
-    "/images/promotion2.png",
-    "/images/promotion3.png",
-    "/images/promotion4.png",
+    "/images/promotion1.jpg",
+    "/images/promotion2.jpg",
+    "/images/promotion3.jpg",
   ];
   const speacialImages = [
     "/images/special2.png",
