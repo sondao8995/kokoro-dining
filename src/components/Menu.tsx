@@ -1,9 +1,11 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import { Carousel } from "antd";
 import { iCielBCDowntown } from "@/app/font";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import { Navigation, Pagination, Scrollbar, A11y,Autoplay } from 'swiper/modules';
 
 interface MenuProps {
   images: string[];
@@ -60,21 +62,24 @@ const Menu: React.FC<MenuProps> = ({ images, title, id }) => {
       <div className="flex items-center justify-center py-8">
         {/* Carousel Container with Fixed Dimensions */}
         <div className="w-full max-w-4xl min-h-[50vh] px-4 sm:px-6 md:px-8 overflow-hidden">
-          <Carousel autoplay autoplaySpeed={5000} arrows className="h-full">
-            {images.map((src, index) => (
-              <div
-                key={index}
-                className="h-full flex items-center justify-center"
-              >
-                <img
-                  src={src}
-                  alt={`Page ${index + 1}`}
-                  className="max-h-full max-w-full object-contain rounded-lg shadow-lg"
-                  style={{ margin: "auto", display: "block" }}
-                />
-              </div>
-            ))}
-          </Carousel>
+          <Swiper
+      modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
+      spaceBetween={50}
+      slidesPerView={1}
+      pagination={{ clickable: true }}
+      autoplay
+      scrollbar={{ draggable: true }}
+    >
+      {images.map((src, index) => (
+      <SwiperSlide key={index}
+> <img
+      src={src}
+      alt={`Page ${index + 1}`}
+      className="max-h-full max-w-full object-contain rounded-lg shadow-lg"
+      style={{ margin: "auto", display: "block" }}
+    /></SwiperSlide>))}
+      
+    </Swiper>
         </div>
       </div>
     </section>
