@@ -4,6 +4,7 @@ import { iCielBCDowntown } from "@/app/font";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper as SwiperType } from 'swiper'; // Import Swiper type
 import 'swiper/css';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 
@@ -25,7 +26,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const FoodMenu: React.FC<MenuProps> = ({ images, title, id, categories }) => {
   const textRef = useRef<HTMLHeadingElement>(null);
-  const menuSwiperRef = useRef<any>(null);
+  const menuSwiperRef = useRef<SwiperType|null>(null);
   const [activeCategoryIndex, setActiveCategoryIndex] = useState(0);
 
   useEffect(() => {
