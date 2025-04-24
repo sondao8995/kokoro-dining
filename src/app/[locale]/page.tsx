@@ -55,11 +55,11 @@ const Home = () => {
         alt="Sushi"
         className="fixed bottom-10 left-0 w-3/4 max-w-xs md:max-w-sm lg:max-w-md transform -translate-x-1/2 w-3/4 z-1 opacity-30"
       />
-      <img 
+      {/* <img 
         src="/images/udon.png" // Replace with your actual sushi image path
         alt="Udon"
         className="fixed bottom-20 right-[-300] w-3/4 max-w-xs md:max-w-sm lg:max-w-md transform -translate-x-1/2 w-3/4 z-1 opacity-30"
-      />
+      /> */}
         <Menu images={menuImages} title={t("menu")} id="menu" />
         <Menu
           images={promotionImages}
