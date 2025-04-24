@@ -3,6 +3,7 @@ import Cover from "../../components/Cover";
 import About from "../../components/About";
 import Footer from "../../components/Footer";
 import Menu from "@/components/Menu";
+import FoodMenu, { Category } from "@/components/FoodMenu"
 import Contact from "@/components/Contact";
 import { utma } from "@/app/font";
 import { useTranslations } from "next-intl";
@@ -40,7 +41,61 @@ const Home = () => {
     "/images/special5.png",
     "/images/special6.png",
   ];
-
+  const categories:Category[]= [{
+    title: "ca ri",
+  image: "/images/categories1.jpg",
+  startIndex: 0,
+  endIndex: 10,
+  },
+  {
+    title: "ca ri",
+  image: "/images/categories2.jpg",
+  startIndex: 11,
+  endIndex: 13,
+  },
+  {
+    title: "ca ri",
+  image: "/images/categories3.jpg",
+  startIndex: 14,
+  endIndex: 15,
+  },
+  {
+    title: "ca ri",
+  image: "/images/categories3.jpg",
+  startIndex: 14,
+  endIndex: 15,
+  },
+  {
+    title: "ca ri",
+  image: "/images/categories3.jpg",
+  startIndex: 14,
+  endIndex: 15,
+  },
+  {
+    title: "ca ri",
+  image: "/images/categories3.jpg",
+  startIndex: 14,
+  endIndex: 15,
+  },
+  {
+    title: "ca ri",
+  image: "/images/categories3.jpg",
+  startIndex: 14,
+  endIndex: 15,
+  },
+  {
+    title: "ca ri",
+  image: "/images/categories3.jpg",
+  startIndex: 14,
+  endIndex: 15,
+  },
+  {
+    title: "ca ri",
+  image: "/images/categories3.jpg",
+  startIndex: 14,
+  endIndex: 15,
+  },
+  ]
   return (
     <div className={`${utma.className}`}>
       <SnowParticle />
@@ -63,7 +118,7 @@ const Home = () => {
             className="max-w-xs md:max-w-sm lg:max-w-md"
           />
         </div>
-        <Menu images={menuImages} title={t("menu")} id="menu" />
+        <FoodMenu images={menuImages} title={t("menu")} id="menu" categories={categories}/>
         <Menu images={promotionImages} title={t("promotions")} id="promotions" />
         <Menu images={speacialImages} title={t("special")} id="special" />
       </main>

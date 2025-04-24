@@ -30,7 +30,7 @@ const t = useTranslations("contact");
 const restaurants: Restaurant[] = [  {
     id: 1,
     image: "/images/yn.jpg",
-    title: "Cơ sở số 1",
+    title: "Yên Ninh",
     address: t("store1"),
     hours: "10:00 - 14:00, 17:00 - 21:00",
     hotline: "0828 826 299",
@@ -41,7 +41,7 @@ const restaurants: Restaurant[] = [  {
   {
     id: 2,
     image: "/images/ld.jpg",
-    title: "Cơ sở số 2",
+    title: "Linh Đàm",
     address:  t("store2"),
     hours: "10:00 - 14:00, 17:00 - 21:00",
     hotline: "0332 689 299",
@@ -52,7 +52,7 @@ const restaurants: Restaurant[] = [  {
   {
     id: 3,
     image: "/images/ngd.jpg",
-    title: "Cơ sở số 3",
+    title: "Ngoại Giao Đoàn",
     address: t("store3"),
     hours: "10:00 - 14:00, 17:00 - 21:00",
     hotline: "0828 838 299",
