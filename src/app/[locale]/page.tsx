@@ -8,6 +8,7 @@ import { utma } from "@/app/font";
 import { useTranslations } from "next-intl";
 import SnowParticle from "@/components/SnowParticle";
 import Advertisement from "@/components/Advertisement";
+
 const Home = () => {
   const t = useTranslations("common");
   const menuImages = [
@@ -39,35 +40,34 @@ const Home = () => {
     "/images/special5.png",
     "/images/special6.png",
   ];
+
   return (
     <div className={`${utma.className}`}>
       <SnowParticle />
       <Header />
       <main>
-        
         <Advertisement />
         <Cover />
         <About />
         <Contact />
-       <img 
-        src="/images/sushi.png" // Replace with your actual sushi image path
-        alt="Sushi"
-        className="fixed bottom-10 left-0 self-end w-3/4 max-w-xs md:max-w-sm lg:max-w-md transform -translate-x-1/2 w-3/4 z-1 opacity-30"
-      />
-      <img 
-        src="/images/udon.png" // Replace with your actual sushi image path
-        alt="Udon"
-        className="fixed bottom-20 right-[-300] self-end w-3/4 max-w-xs md:max-w-sm lg:max-w-md transform -translate-x-1/2 w-3/4 z-1 opacity-30"
-      />
+        {/* Container for sushi and udon images */}
+        <div className="fixed inset-0 grid grid-cols-2 place-items-center z-1 opacity-30 pointer-events-none">
+          <img 
+            src="/images/sushi.png" 
+            alt="Sushi"
+            className="max-w-xs md:max-w-sm lg:max-w-md"
+          />
+          <img 
+            src="/images/udon.png" 
+            alt="Udon"
+            className="max-w-xs md:max-w-sm lg:max-w-md"
+          />
+        </div>
         <Menu images={menuImages} title={t("menu")} id="menu" />
-        <Menu
-          images={promotionImages}
-          title={t("promotions")}
-          id="promotions"
-        />
+        <Menu images={promotionImages} title={t("promotions")} id="promotions" />
         <Menu images={speacialImages} title={t("special")} id="special" />
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
