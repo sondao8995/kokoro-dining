@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 interface Restaurant {
   id: number;
@@ -93,10 +94,14 @@ const logos: Logo[] = [
         {restaurants.map((restaurant) => (
           <SwiperSlide key={restaurant.id}>
             <div className="rounded-lg shadow-md overflow-hidden">
-              <img
+            <Image
                 src={restaurant.image}
                 alt={restaurant.title}
-                className="w-full max-h-[200px] object-cover"
+                width={400}
+                height={300}
+                className="w-full max-h-[200px] object-cover swiper-lazy"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                loading="lazy"
               />
              <div className="p-4 h-36 bg-white flex flex-col justify-between">
                 <div>
@@ -110,12 +115,14 @@ const logos: Logo[] = [
                 <div className="absolute bottom-30 right-4 flex space-x-2">
                   {logos.map((logo, index) => (
                    <a key={index} href={restaurant[logo.key]}>
-                   <img
-                      key={index}
-                      src={logo.src}
-                      alt={`Logo ${index + 1}`}
-                      className="w-6 h-6 object-contain"
-                    /></a>
+                   <Image
+                        src={logo.src}
+                        alt={`${logo.key} logo`}
+                        width={24}
+                        height={24}
+                        className="w-6 h-6 object-contain swiper-lazy"
+                        loading="lazy"
+                      /></a>
                   ))}
                 </div>
               </div>

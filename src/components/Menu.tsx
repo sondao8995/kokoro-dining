@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/all";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Navigation, Pagination, Scrollbar, A11y,Autoplay } from 'swiper/modules';
+import Image from "next/image";
 
 interface MenuProps {
   images: string[];
@@ -78,12 +79,16 @@ const Menu: React.FC<MenuProps> = ({ images, title, id }) => {
     >
       {images.map((src, index) => (
       <SwiperSlide key={index}
-> <img
-      src={src}
-      alt={`Page ${index + 1}`}
-      className="max-h-full max-w-full object-contain rounded-lg shadow-lg"
-      style={{ margin: "auto", display: "block" }}
-    /></SwiperSlide>))}
+> <Image
+                  src={src}
+                  alt={`Page ${index + 1}`}
+                  width={800}
+                  height={600}
+                  className="max-h-full max-w-full object-contain rounded-lg shadow-lg swiper-lazy"
+                  style={{ margin: "auto", display: "block" }}
+                  sizes="100vw"
+                  loading="lazy"
+                /></SwiperSlide>))}
       
     </Swiper>
         </div>

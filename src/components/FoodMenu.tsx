@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Swiper as SwiperType } from 'swiper'; // Import Swiper type
 import 'swiper/css';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import Image from "next/image";
 
 export interface Category {
   title: string;
@@ -139,9 +140,14 @@ const FoodMenu: React.FC<MenuProps> = ({ images, title, id, categories }) => {
                     textAlign: 'center',
                   }}
                 >
-                  <img
+                 <Image
                     src={category.image}
                     alt={category.title}
+                    width={50}
+                    height={50}
+                    className="object-cover swiper-lazy"
+                    sizes="(min-width: 1024px) 80px, 50px"
+                    loading="lazy"
                   />
                   <p className='text-gray-500 text-sm'>{category.title}</p>
                 </div>
@@ -176,11 +182,15 @@ const FoodMenu: React.FC<MenuProps> = ({ images, title, id, categories }) => {
           >
             {images.map((src, index) => (
               <SwiperSlide key={index}>
-                <img
+                <Image
                   src={src}
                   alt={`Page ${index + 1}`}
-                  className="max-h-full max-w-full object-contain rounded-lg shadow-lg"
+                  width={800}
+                  height={600}
+                  className="max-h-full max-w-full object-contain rounded-lg shadow-lg swiper-lazy"
                   style={{ margin: "auto", display: "block" }}
+                  sizes="100vw"
+                  loading="lazy"
                 />
               </SwiperSlide>
             ))}
