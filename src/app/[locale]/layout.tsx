@@ -43,6 +43,7 @@ export default async function LocaleLayout({children, params }: LocaleLayoutProp
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
+        <Analytics/>
       </body>
     </html>
   );
