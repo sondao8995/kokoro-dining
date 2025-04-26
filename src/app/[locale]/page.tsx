@@ -42,59 +42,71 @@ const Home = () => {
     "/images/special6.png",
   ];
   const categories:Category[]= [{
-    title: "ca ri",
-  image: "/images/categories1.jpg",
-  startIndex: 0,
+    title: "Khai vị",
+  image: "/images/007.jpg",
+  startIndex: 3,
+  endIndex: 3,
+  },
+  {
+    title: "Ăn nhẹ",
+  image: "/images/011.jpg",
+  startIndex: 4,
+  endIndex: 5,
+  },
+  {
+    title: "Mì udon",
+  image: "/images/751.jpg",
+  startIndex: 6,
+  endIndex: 6,
+  },
+  {
+    title: "Cơm lươn",
+  image: "/images/652.jpg",
+  startIndex: 7,
+  endIndex: 7,
+  },
+  {
+    title: "Cơm natto",
+  image: "/images/851.jpg",
+  startIndex: 8,
+  endIndex: 8,
+  },
+  {
+    title: "Cơm Gyudon",
+  image: "/images/252.jpg",
+  startIndex: 9,
+  endIndex: 9,
+  },
+  {
+    title: "Cơm Karubi",
+  image: "/images/154.jpg",
+  startIndex: 10,
   endIndex: 10,
   },
   {
-    title: "ca ri",
-  image: "/images/categories2.jpg",
+    title: "Cơm gà",
+  image: "/images/451.jpg",
   startIndex: 11,
-  endIndex: 13,
+  endIndex: 11,
   },
   {
-    title: "ca ri",
-  image: "/images/categories3.jpg",
-  startIndex: 14,
-  endIndex: 15,
+    title: "Cơm cà ri",
+  image: "/images/353.jpg",
+  startIndex: 12,
+  endIndex: 12,
   },
   {
-    title: "ca ri",
-  image: "/images/categories3.jpg",
-  startIndex: 14,
-  endIndex: 15,
+    title:"Cơm heo",
+    image:"/images/551.jpg",
+    startIndex:13,
+    endIndex:13
   },
   {
-    title: "ca ri",
-  image: "/images/categories3.jpg",
-  startIndex: 14,
-  endIndex: 15,
-  },
-  {
-    title: "ca ri",
-  image: "/images/categories3.jpg",
-  startIndex: 14,
-  endIndex: 15,
-  },
-  {
-    title: "ca ri",
-  image: "/images/categories3.jpg",
-  startIndex: 14,
-  endIndex: 15,
-  },
-  {
-    title: "ca ri",
-  image: "/images/categories3.jpg",
-  startIndex: 14,
-  endIndex: 15,
-  },
-  {
-    title: "ca ri",
-  image: "/images/categories3.jpg",
-  startIndex: 14,
-  endIndex: 15,
-  },
+    title:"Tráng miệng",
+    image:"/images/995.jpg",
+    startIndex:14,
+    endIndex:14
+  }
   ]
   return (
     <div className={`${utma.className}`}>

@@ -59,6 +59,7 @@ const FoodMenu: React.FC<MenuProps> = ({ images, title, id, categories }) => {
       <style jsx>{`
         .category-slide {
           width: 60px;
+          height: 100px;
           padding: 5px;
         }
         .category-slide img {
@@ -69,6 +70,7 @@ const FoodMenu: React.FC<MenuProps> = ({ images, title, id, categories }) => {
         @media (min-width: 1024px) {
           .category-slide {
             width: 100px;
+            height: 140px;
             padding: 7px;
           }
           .category-slide img {
@@ -115,6 +117,10 @@ const FoodMenu: React.FC<MenuProps> = ({ images, title, id, categories }) => {
                 }
             }}
             navigation
+            style={{
+                "--swiper-navigation-color": "#673110",
+                "--swiper-navigation-size": "15px",                
+              }as React.CSSProperties}
           >
             {categories.map((category, index) => (
               <SwiperSlide key={index}>
@@ -137,7 +143,7 @@ const FoodMenu: React.FC<MenuProps> = ({ images, title, id, categories }) => {
                     src={category.image}
                     alt={category.title}
                   />
-                  <p className='text-gray-500'>{category.title}</p>
+                  <p className='text-gray-500 text-sm'>{category.title}</p>
                 </div>
               </SwiperSlide>
             ))}
@@ -161,6 +167,12 @@ const FoodMenu: React.FC<MenuProps> = ({ images, title, id, categories }) => {
               const activeCatIndex = categories.findIndex(cat => currentIndex >= cat.startIndex && currentIndex <= cat.endIndex);
               setActiveCategoryIndex(activeCatIndex);
             }}
+            style={{
+                '--swiper-pagination-color': '#673110',
+                '--swiper-pagination-bullet-inactive-color': '#d1d5db',
+                '--swiper-pagination-bullet-inactive-opacity': '0.5',
+                '--swiper-pagination-bullet-size': '10px',
+              }as React.CSSProperties}
           >
             {images.map((src, index) => (
               <SwiperSlide key={index}>

@@ -69,6 +69,12 @@ const Menu: React.FC<MenuProps> = ({ images, title, id }) => {
       pagination={{ clickable: true }}
       autoplay
       scrollbar={{ draggable: true }}
+      style={{
+        '--swiper-pagination-color': '#673110',
+        '--swiper-pagination-bullet-inactive-color': '#d1d5db',
+        '--swiper-pagination-bullet-inactive-opacity': '0.5',
+        '--swiper-pagination-bullet-size': '10px',
+      }as React.CSSProperties}
     >
       {images.map((src, index) => (
       <SwiperSlide key={index}

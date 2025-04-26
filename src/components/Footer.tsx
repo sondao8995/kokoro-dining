@@ -6,8 +6,8 @@ const Footer = () => {
         <img
                 src="/images/2.png"
                 alt="Kokoro Logo"
-                width={100}
-                height={100}
+                width={70}
+                height={70}
         />
       </div>
       <h2 className="text-md mb-4 text-center text-black">

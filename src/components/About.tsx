@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import { FacebookOutlined, InstagramOutlined } from "@ant-design/icons";
+import { FacebookFilled, InstagramFilled } from "@ant-design/icons";
 import { iCielBCDowntown } from "@/app/font";
 import { useTranslations } from "next-intl";
 import gsap from "gsap";
@@ -112,13 +112,13 @@ const About = () => {
           href="https://www.facebook.com/kokoro30yenninh"
           className="text-blue-600 hover:text-blue-700"
         >
-          <FacebookOutlined style={{ fontSize: 50 }} />
+          <FacebookFilled style={{ fontSize: 50 }} />
         </a>
         <a
           href="https://instagram.com/kokorodiningvn"
           className="text-pink-600 hover:text-pink-700"
         >
-          <InstagramOutlined style={{ fontSize: 50 }} />
+          <InstagramFilled style={{ fontSize: 50 }} />
         </a>
       </div>
       {/* Google Map */}
