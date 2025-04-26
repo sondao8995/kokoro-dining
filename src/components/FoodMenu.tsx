@@ -62,6 +62,10 @@ const FoodMenu: React.FC<MenuProps> = ({ images, title, id, categories }) => {
           width: 60px;
           height: 100px;
           padding: 5px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
         }
         .category-slide img {
           width: 50px;
@@ -71,7 +75,7 @@ const FoodMenu: React.FC<MenuProps> = ({ images, title, id, categories }) => {
         @media (min-width: 1024px) {
           .category-slide {
             width: 100px;
-            height: 140px;
+            height: 100px;
             padding: 7px;
           }
           .category-slide img {
