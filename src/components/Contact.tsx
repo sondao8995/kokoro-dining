@@ -60,6 +60,7 @@ const restaurants: Restaurant[] = [  {
     address: t("store3"),
     hours: "10:00 - 14:00, 17:00 - 21:00",
     hotline: "0828 838 299",
+    be:"https://begroup.onelink.me/n83F/6tiecvb0",
     shopee:"https://shopeefood.vn/u/YUrgNuq",
     ggmap:"https://www.google.com/maps/dir//KOKORO+Japanese+Dining+-+Ngo%E1%BA%A1i+giao+%C4%91o%C3%A0n,+Ph%E1%BB%91+Nguy%E1%BB%85n+Duy+Th%C3%AC,+p,+Xu%C3%A2n+T%E1%BA%A3o,+B%E1%BA%AFc+T%E1%BB%AB+Li%C3%AAm,+H%C3%A0+N%E1%BB%99i/@21.0432104,105.8443565,16z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x3135abe8a78f65f3:0x67cf806a54787358!2m2!1d105.8004115!2d21.0653665?entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoJLDEwMjExNjQwSAFQAw%3D%3D"
   }
