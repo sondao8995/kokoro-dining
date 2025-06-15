@@ -28,9 +28,9 @@ const SnowParticle = dynamic(() => import("@/components/SnowParticle"), {
   ssr: false, // Likely client-side animation
   loading: () => <div />,
 });
-const Advertisement = dynamic(() => import("@/components/Advertisement"), {
-  loading: () => <div className="h-48 bg-gray-200" />,
-});
+// const Advertisement = dynamic(() => import("@/components/Advertisement"), {
+//   loading: () => <div className="h-48 bg-gray-200" />,
+// });
 
 const Home = () => {
   const t = useTranslations("common");
