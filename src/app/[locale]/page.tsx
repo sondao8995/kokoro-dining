@@ -55,6 +55,8 @@ const Home = () => {
   const promotionImages = [
     "/images/promotion1.jpg",
     "/images/promotion2.jpg",
+    "/images/promotion3.jpg",
+    "/images/promotion4.jpg",
   ];
   const speacialImages = [
     "/images/special2.png",
