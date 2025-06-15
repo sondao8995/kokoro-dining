@@ -139,7 +139,7 @@ const Home = () => {
       <SnowParticle />
       <Header />
       <main>
-        <Advertisement />
+        {/* <Advertisement /> */}
         <Cover />
         <About />
         <Contact />
