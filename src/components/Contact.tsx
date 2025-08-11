@@ -22,7 +22,7 @@ interface Restaurant {
 }
 interface Logo {
   src: string;
-  key: keyof Pick<Restaurant, "shopee" | "deliveryk" | "be"| "ggmap">;
+  key: keyof Pick<Restaurant, "shopee" | "deliveryk" | "be"| "ggmap"| "xanhsm">;
 }
 const Contact = () => {
   
@@ -39,6 +39,7 @@ const restaurants: Restaurant[] = [  {
     deliveryk: "https://www.deliveryk.com/shops/10148",
     shopee: "https://shopeefood.vn/ha-noi/kokoro-com-ngon-nhat-ban-yen-ninh",
     be: "https://begroup.onelink.me/n83F/odzekkwr",
+    xanhsm: "https://xanhsmngon.onelink.me/14WJ/l8tm2wp8",
     ggmap:"https://www.google.com/maps/dir//KOKORO+Japanese+Dining+30+P.+Y%C3%AAn+Ninh+Tr%C3%BAc+B%E1%BA%A1ch+Ba+%C4%90%C3%ACnh,+H%C3%A0+N%E1%BB%99i+100000/@21.0432104,105.8443565,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3135abd20652cdd3:0x445a95a1eabdc9b5!2m2!1d105.8443565!2d21.0432104?entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoJLDEwMjExNjQwSAFQAw%3D%3D",
 },
   {
@@ -51,6 +52,7 @@ const restaurants: Restaurant[] = [  {
     shopee: "https://shopeefood.vn/u/5eH4Cri",
     be: "https://begroup.onelink.me/n83F/5rjeml3e",
     deliveryk: "https://www.deliveryk.com/shops/11169",
+    xanhsm: "https://xanhsmngon.onelink.me/14WJ/3rg6zb1v",
     ggmap:"https://www.google.com/maps/dir//Kokoro+Japanese+Dining+Linh+%C4%90%C3%A0m,+B%C3%A1n+%C4%90%E1%BA%A3o+Linh+%C4%90%C3%A0m,+Khu+%C4%91%C3%B4+th%E1%BB%8B+Linh+%C4%90%C3%A0m,+Ho%C3%A0ng+Li%E1%BB%87t,+Ho%C3%A0ng+Mai,+Hanoi/@21.0432104,105.8443565,16z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x3135ad0067586a67:0xb7287fe2c3f7de8d!2m2!1d105.8324404!2d20.9627545?entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoJLDEwMjExNjQwSAFQAw%3D%3D"
 },
   {
@@ -63,6 +65,7 @@ const restaurants: Restaurant[] = [  {
     be:"https://begroup.onelink.me/n83F/j0xtnnhw",
     shopee:"https://shopeefood.vn/u/YUrgNuq",
     deliveryk: "https://www.deliveryk.com/shops/13169",
+    xanhsm: "https://xanhsmngon.onelink.me/14WJ/068t4xkx",
     ggmap:"https://www.google.com/maps/dir//KOKORO+Japanese+Dining+-+Ngo%E1%BA%A1i+giao+%C4%91o%C3%A0n,+Ph%E1%BB%91+Nguy%E1%BB%85n+Duy+Th%C3%AC,+p,+Xu%C3%A2n+T%E1%BA%A3o,+B%E1%BA%AFc+T%E1%BB%AB+Li%C3%AAm,+H%C3%A0+N%E1%BB%99i/@21.0432104,105.8443565,16z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x3135abe8a78f65f3:0x67cf806a54787358!2m2!1d105.8004115!2d21.0653665?entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoJLDEwMjExNjQwSAFQAw%3D%3D"
   },
   {
@@ -75,6 +78,7 @@ const restaurants: Restaurant[] = [  {
     be: "https://begroup.onelink.me/n83F/3526ur81",
     shopee: "https://shopeefood.vn/u/iXqMPpu",
     deliveryk: "https://www.deliveryk.com/shops/11169",
+    xanhsm: "https://xanhsmngon.onelink.me/14WJ/rlgd5qr1",
     ggmap: "https://maps.app.goo.gl/LXuEz2j3KttfeJeN6"
   
   }
@@ -83,7 +87,8 @@ const logos: Logo[] = [
   { src: "/images/ggmap.png",key:"ggmap"},
   { src: "/images/shopee.png", key: "shopee" },
   { src: "/images/deliveryk.png", key: "deliveryk" },
-  { src: "/images/be.png", key: "be" }
+  { src: "/images/be.png", key: "be" },
+  { src: "/images/xanhsm.png", key: "xanhsm" }
 ];
   return (
     <div className="w-full max-w-5xl mx-auto py-8">
