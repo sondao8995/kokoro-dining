@@ -18,6 +18,7 @@ interface Restaurant {
   deliveryk?: string;
   shopee?: string;
   be?: string;
+  xanhsm?:string;
   ggmap?:string; 
 }
 interface Logo {
