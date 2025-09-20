@@ -57,6 +57,7 @@ const Home = () => {
     "/images/promotion2.jpg",
     "/images/promotion3.jpg",
     "/images/promotion4.jpg",
+    "/images/promotion5.jpg",
   ];
   const speacialImages = [
     "/images/special2.png",
