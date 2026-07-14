@@ -53,11 +53,7 @@ const Home = () => {
     "/images/page15.jpg",
   ];
   const promotionImages = [
-    "",
-    "",
-    "",
     "/images/promotion4.jpg",
-    "",
   ];
   const speacialImages = [
     "/images/special2.png",
