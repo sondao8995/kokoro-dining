@@ -73,7 +73,15 @@ const restaurants: Restaurant[] = [  {
     id: 4,
     image: "/images/sc.jpg",
     title: "Smart City",
-    address: "Dừng hoạt động từ 12/07/2026"
+    address: "Dừng hoạt động từ 12/07/2026",
+    hours: "",
+    hotline: "",
+    be: "https://begroup.onelink.me/n83F/3526ur81",
+    shopee: "https://shopeefood.vn/u/iXqMPpu",
+    deliveryk: "https://www.deliveryk.com/shops/11169",
+    xanhsm: "https://xanhsmngon.onelink.me/14WJ/rlgd5qr1",
+    ggmap: "https://maps.app.goo.gl/LXuEz2j3KttfeJeN6"
+  
   }
 ];
 const logos: Logo[] = [
