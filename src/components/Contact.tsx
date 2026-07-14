@@ -73,7 +73,7 @@ const restaurants: Restaurant[] = [  {
     id: 4,
     image: "/images/sc.jpg",
     title: "Smart City",
-    address: "t("store4"),
+    address: t("store4"),
     hours:"Dừng hoạt động",
     hotline:"từ ngày 12/07/2026",
     be: "https://begroup.onelink.me/n83F/3526ur81",
