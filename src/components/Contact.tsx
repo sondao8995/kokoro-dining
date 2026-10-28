@@ -71,16 +71,16 @@ const restaurants: Restaurant[] = [  {
   },
   {
     id: 4,
-    image: "/images/sc.jpg",
-    title: "Smart City",
+    image: "/images/dn.jpg",
+    title: "Dương Nội",
     address: t("store4"),
-    hours:"Dừng hoạt động",
-    hotline:"từ ngày 12/07/2026",
+    hours:"10:00 - 14:00, 17:00 - 21:00",
+    hotline:"0375 799 236",
     be: "https://begroup.onelink.me/n83F/3526ur81",
     shopee: "https://shopeefood.vn/u/iXqMPpu",
     deliveryk: "https://www.deliveryk.com/shops/11169",
     xanhsm: "https://xanhsmngon.onelink.me/14WJ/rlgd5qr1",
-    ggmap: "https://maps.app.goo.gl/LXuEz2j3KttfeJeN6"
+    ggmap: "https://maps.app.goo.gl/DMgG2gGpHTmJDZD87"
   
   }
 ];
